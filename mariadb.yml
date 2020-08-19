@@ -3,7 +3,7 @@ services:
   mariadb:
     image: mariadb:10.2.23
     volumes:
-      - "./volumes/mariadb:/var/lib/mariadb"
+      - "./volumes/mariadb:/var/lib/mysql"
     container_name: mariadb
     env_file: .env
     ports:
