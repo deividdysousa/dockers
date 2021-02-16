@@ -4,6 +4,7 @@ services:
     image: mysql:5.7
     volumes:
       - "./volumes/mysql:/var/lib/mysql"
+      - "./my.cnf:/etc/mysql/my.cnf"
     container_name: mysql
     env_file: .env
     ports:
