@@ -4,6 +4,7 @@ services:
     image: mariadb:10.2.23
     volumes:
       - "./volumes/mariadb:/var/lib/mysql"
+      - "./my.cnf:/etc/mysql/my.cnf"
     container_name: mariadb
     env_file: .env
     ports:
